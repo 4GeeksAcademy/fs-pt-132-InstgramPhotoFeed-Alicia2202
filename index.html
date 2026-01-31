@@ -49,7 +49,7 @@
     <main>
 
         <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-            <!--Principio del Grip-->
+            <!--Principio del Grid-->
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="grip-tab" data-bs-toggle="tab" data-bs-target="#grip-tab-pane"
                     type="button" role="tab" aria-controls="grip-tab-pane" aria-selected="true">
@@ -60,11 +60,12 @@
 
             <!--Principio de visualización ampliada-->
             <li class="nav-item" role="presentation">
-                <button class="nav-linkvisual" data-bs-toggle="tab" data-bs-tarvisual-pane" type="button" role="tab"
-                    aria-contvisual-pane" aria-selected="false">
+                <button class="nav-link" id="visual-tab" data-bs-toggle="tab" data-bs-target="#visual-tab-pane"
+                    type="button" role="tab" aria-controls="visual-tab-pane" aria-selected="false">
                     <i class="fa-solid fa-square" style="color: #0d6efd;"></i>
                 </button>
             </li>
+
         </ul>
 
         <div class="tab-content" id="myTabContent">
@@ -109,8 +110,50 @@
             </div>
 
             <!--se acaba las imagenes 3x3-->
-            <div class="tab-pane fadevisual-pane" role="tabpanel" aria-labelledby="visual-tab" tabindex="0">
-                ...
+
+            <!--Empieza la visualización de imagenes agrandadas-->
+            <div class="tab-pane fade" id="visual-tab-pane" role="tabpanel" aria-labelledby="visual-tab" tabindex="0">
+                <div class="d-flex flex-column align-items-center gap-4">
+                    <!--Primera foto-->
+                    <div class="card rounded-0" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="mb-0">My first photo!</h5>
+                            <p class="mb-0">08/26</p>
+                        </div>
+                        <img src="https://picsum.photos/400/500?random=1" class="card-img-top rounded-0" alt="imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">204 Likes</h5>
+                            <p class="card-text">This is an example of a very good photo that you can post on instagram.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Segunda foto-->
+                    <div class="card rounded-0" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="mb-0">The great photo</h5>
+                            <p class="mb-0">04/09</p>
+                        </div>
+                        <img src="https://picsum.photos/400/500?random=2" class="card-img-top rounded-0" alt="imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">26985 Likes</h5>
+                            <p class="card-text">This is an example of a very good photo you can post on instagram.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Tercera foto-->
+                    <div class="card rounded-0" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="mb-0">Amazing!</h5>
+                            <p class="mb-0">06/10</p>
+                        </div>
+                        <img src="https://picsum.photos/400/500?random=3" class="card-img-top rounded-0" alt="imagen 3">
+                        <div class="card-body">
+                            <h5 class="card-title">204 Likes</h5>
+                            <p class="card-text">This is an example of a very good photo that you can post on instagram.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
